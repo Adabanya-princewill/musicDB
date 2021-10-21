@@ -32,8 +32,8 @@ use Mix.Config
 config :music_db, :ecto_repos, [MusicDB.Repo]
 
 config :music_db, MusicDB.Repo,
-  # username: admin@gmail.com,
-  # password: 123456789,
+   username: "postgres",
+  password: "postgres",
   database: "music_db",
   hostname: "localhost",
   migration_lock: nil # this is not normally needed - we put it here to support an example of
