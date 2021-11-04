@@ -31,8 +31,8 @@ use Mix.Config
 
 config :music_db, :ecto_repos, [MusicDB.Repo]
 
-config :music_db, MusicDB.Repo, migration_timestamps: [type: :utc_datetime]
-   username: "postgres",
+config :music_db, MusicDB.Repo, migration_timestamps: [type: :utc_datetime],
+  username: "postgres",
   password: "postgres",
   database: "music_db",
   hostname: "localhost",

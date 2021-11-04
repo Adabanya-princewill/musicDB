@@ -12,7 +12,7 @@ defmodule MusicDB.Artist do
   alias MusicDB.{Artist, Album}
 
   schema "artists" do
-    field(:name)
+    field(:name, :string)
     field(:birth_date, :date)
     field(:death_date, :date)
     timestamps()
